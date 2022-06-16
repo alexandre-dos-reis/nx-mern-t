@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Message } from '@mern-t/api-interfaces';
+import { Message } from '@nx-mern-t/api-interfaces';
 
 export const App = () => {
   const [m, setMessage] = useState<Message>({ message: '' });
@@ -13,7 +13,7 @@ export const App = () => {
   return (
     <>
       <div style={{ textAlign: 'center' }}>
-        <h1>Welcome to mern-t!</h1>
+        <h1>Welcome to nx-mern-t!</h1>
         <img
           width="450"
           src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"

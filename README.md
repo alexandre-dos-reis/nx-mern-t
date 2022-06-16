@@ -1,10 +1,19 @@
 
 
-# MernT
+# NX-MERN-T
+
+The title project stands for :
+
+- **NX** Monorepo
+- **M**ongoDB
+- **E**xpress
+- **R**eact
+- **N**ode
+- **T**ypescript
+
+**MERN** is a well know stack in the Node community.
 
 This project was generated using [Nx](https://nx.dev).
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
 
 🔎 **Smart, Fast and Extensible Build System**
 

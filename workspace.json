@@ -4,7 +4,7 @@
   "projects": {
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
-    "mern-t": "apps/mern-t",
-    "mern-t-e2e": "apps/mern-t-e2e"
+    "nx-mern-t": "apps/nx-mern-t",
+    "nx-mern-t-e2e": "apps/nx-mern-t-e2e"
   }
 }

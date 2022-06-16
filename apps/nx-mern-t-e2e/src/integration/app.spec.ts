@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('mern-t', () => {
+describe('nx-mern-t', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
@@ -8,6 +8,6 @@ describe('mern-t', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome mern-t');
+    getGreeting().contains('Welcome nx-mern-t');
   });
 });

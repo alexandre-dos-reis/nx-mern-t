@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/mern-t/src",
+  "sourceRoot": "apps/nx-mern-t/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,14 +9,17 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/apps/mern-t",
-        "index": "apps/mern-t/src/index.html",
+        "outputPath": "dist/apps/nx-mern-t",
+        "index": "apps/nx-mern-t/src/index.html",
         "baseHref": "/",
-        "main": "apps/mern-t/src/main.tsx",
-        "polyfills": "apps/mern-t/src/polyfills.ts",
-        "tsConfig": "apps/mern-t/tsconfig.app.json",
-        "assets": ["apps/mern-t/src/favicon.ico", "apps/mern-t/src/assets"],
-        "styles": ["apps/mern-t/src/styles.scss"],
+        "main": "apps/nx-mern-t/src/main.tsx",
+        "polyfills": "apps/nx-mern-t/src/polyfills.ts",
+        "tsConfig": "apps/nx-mern-t/tsconfig.app.json",
+        "assets": [
+          "apps/nx-mern-t/src/favicon.ico",
+          "apps/nx-mern-t/src/assets"
+        ],
+        "styles": ["apps/nx-mern-t/src/styles.scss"],
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },
@@ -30,8 +33,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "apps/mern-t/src/environments/environment.ts",
-              "with": "apps/mern-t/src/environments/environment.prod.ts"
+              "replace": "apps/nx-mern-t/src/environments/environment.ts",
+              "with": "apps/nx-mern-t/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -47,16 +50,16 @@
       "executor": "@nrwl/web:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "mern-t:build",
+        "buildTarget": "nx-mern-t:build",
         "hmr": true,
-        "proxyConfig": "apps/mern-t/proxy.conf.json"
+        "proxyConfig": "apps/nx-mern-t/proxy.conf.json"
       },
       "configurations": {
         "development": {
-          "buildTarget": "mern-t:build:development"
+          "buildTarget": "nx-mern-t:build:development"
         },
         "production": {
-          "buildTarget": "mern-t:build:production",
+          "buildTarget": "nx-mern-t:build:production",
           "hmr": false
         }
       }
@@ -65,14 +68,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/mern-t/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/nx-mern-t/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/mern-t"],
+      "outputs": ["coverage/apps/nx-mern-t"],
       "options": {
-        "jestConfig": "apps/mern-t/jest.config.ts",
+        "jestConfig": "apps/nx-mern-t/jest.config.ts",
         "passWithNoTests": true
       }
     }

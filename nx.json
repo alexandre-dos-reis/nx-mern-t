@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "mern-t",
+  "npmScope": "nx-mern-t",
   "affected": {
     "defaultBase": "main"
   },
@@ -40,5 +40,5 @@
       }
     }
   },
-  "defaultProject": "mern-t"
+  "defaultProject": "nx-mern-t"
 }
